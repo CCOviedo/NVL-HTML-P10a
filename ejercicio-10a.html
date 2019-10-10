@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+	<p>Tu opinion es importante</p>
+	<form method="post" action="servidor.php">
+		<div>
+			<label for="cp"><strong>-Codigo Postal:</strong> </label>
+			<input type="number" id="cp"/>
+		</div>
+		<div>
+			<label for="nvl_satisf"><strong>-Nivel de satisfacción:</strong> </label>
+			<select id="nvl_satisf">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+		</div>
+		<div>
+			<label for="email"><strong>-Email:</strong> </label>
+			<input type="email" id="email"/>
+		</div>
+		<div>
+			<label for="positivo"><strong>-Puntos positivos:</strong> </label>
+			<textarea id="positivo"></textarea>
+		</div>
+		<div>
+			<label for="negativo"><strong>-Puntos negativos:</strong> </label>
+			<textarea id="negativo"></textarea>
+		</div>
+		<div>
+			<label for="v_final"><strong>-Valoracion final:</strong> </label>
+			<select name="v_final">
+				<option>Excelente</option>
+				<option>Bueno</option>
+				<option>Regular</option>
+				<option>Pésimo</option>
+			</select>
+		</div>
+		<div>
+			<label for="v_final"><strong>-Valoracion final:</strong> </label>
+			<input type="radio" name="final"/>Excelente
+			<input type="radio" name="final"/>Bueno
+			<input type="radio" name="final"/>Regular
+			<input type="radio" name="final"/>Pésimo
+		</div>
+		<input type="submit" value="Enviar"/>
+	</form>
+  </body>
+</html>
